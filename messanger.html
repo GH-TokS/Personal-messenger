@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Пример мессенджера</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Импорт стиля для отображения иконки отправки (как в Телеграме) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <!-- <link rel="stylesheet" href="bootstrap-icons.css"/> -->
+  </head>
+
+  <body>
+    <!-- Основной блок всего окна -->
+    <div class="container">
+
+      <!-- Верхний заголовок -->
+
+      <div class="msg-header">
+        <div class="container1">
+          <img src="user1.png" id="userPicture" class="msgimg" />
+          <div class="active" id="userCaption">
+            <p id="user_name">Выбор пользователя</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Окончание верхнего заголовка -->
+
+      <!-- Общий блок чата мессенджера  -->
+      <div class="chat-page">
+        <div class="msg-inbox">
+          <!-- Блок непосредственно чата мессенджера, без поля с кнопкой и набора текста  -->
+          <div class="chats">
+            <!-- Блок/контейнер для всех отображаемых сообщений с прокруткой -->
+            <div class="msg-page" id="TGA">
+              <!-- Блок для полученного сообщения с блоком картинки и текста сообщения (сообщения слева)-->
+
+            </div>
+          </div>
+          <!-- Нижняя часть где поле отправки сообщения с кнопкой -->
+          <div class="msg-bottom">
+            <div class="output-group">
+              <span class="output-group-text send-icon" id="butt0">
+                <i class="bi bi-send"></i>
+              </span>
+            </div>
+            <!-- Блок кнопки отправки сообщения -->
+            <div class="input-group">
+              <input id="textelement"
+                type="text"
+                class="form-control"
+                placeholder="Тут можно начать писать сообщение..."
+              />
+              <!-- Отрисовка кнопки из внешнего файла стилей -->
+              <span class="input-group-text send-icon" id="butt">
+                <i class="bi bi-send"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/messanger.js"></script>
+</html>
